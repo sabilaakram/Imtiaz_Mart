@@ -6,18 +6,16 @@ authors = ["sabilaakram <139713987+sabilaakram@users.noreply.github.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = "^3.8"
 fastapi = "^0.111.0"
 sqlmodel = "^0.0.18"
 uvicorn = "^0.30.0"
 pytest = "^8.2.1"
 httpx = "^0.27.0"
-python-jose = {extras = ["cryptography"], version = "^3.3.0"}
-psycopg = {extras = ["binary"], version = "^3.1.19"}
-passlib = {extras = ["brcypt"], version = "^1.7.4"}
+python-jose = { version = "^3.3.0", extras = ["cryptography"] }
+psycopg2-binary = "^2.9.1"
+passlib = { version = "^1.7.4", extras = ["bcrypt"] }
 python-multipart = "^0.0.9"
-
-
 
 [build-system]
 requires = ["poetry-core"]
